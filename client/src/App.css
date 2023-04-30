@@ -1,0 +1,81 @@
+.navbar {
+  height: 60px;
+  padding: 20px;
+}
+
+.app-title {
+  color: #4E9F3D;
+  font-size: 32px;
+}
+
+.app-body {
+  height: 100%;
+  padding: 20px;
+}
+
+.app-main-grid {
+  flex-wrap: wrap !important;
+}
+
+.card {
+  width: 350px;
+  height: 230px;
+  border-radius: 24px !important;
+  padding: 10px;
+}
+
+.card.card-1 {
+  background-color: #B9C2B6 !important;
+}
+
+.card.card-2 {
+  background-color: #B0D2C2 !important;
+  margin-top: 10px;
+}
+
+.summary-grid {
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+} 
+
+.card-title {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.chart-card {
+  width: 800px;
+  height: 500px;
+  border-radius: 24px !important;
+  padding: 10px;
+}
+
+.chart-card.card-1 {
+  background-color: #BFB294;
+}
+
+.chart-card.card-2 {
+  background-color: #C3C3AA;
+}
+
+.card-1-item {
+  font-size: 14px;
+  padding: 15px 20px;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.item-one {
+  background-color: #D3E1FA;
+}
+
+.item-two {
+  background-color: #D3F1F9;
+}

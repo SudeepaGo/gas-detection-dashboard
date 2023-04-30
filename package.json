@@ -1,0 +1,21 @@
+{
+  "name": "gas-detection-dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server/app.js",
+    "build": "cd client && npm install && npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "serialport": "^11.0.0",
+    "socket.io": "^4.6.1"
+  },
+  "engines": {
+    "node": "18.16.0"
+  }
+}
