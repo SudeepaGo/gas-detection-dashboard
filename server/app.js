@@ -1,5 +1,5 @@
 const http = require("http");
-const express = require('express');
+const express = require("express");
 const socketIo = require("socket.io");
 
 const PORT = process.env.port || 4001;
@@ -11,9 +11,9 @@ app.use(index);
 const server = http.createServer(app);
 
 const io = socketIo(server, {
-    cors: {
-        origin: '*',
-    }
+  cors: {
+    origin: "*",
+  },
 }); // Bind socket.io to our express server
 
 const { SerialPort } = require('serialport');
@@ -32,14 +32,14 @@ parser.on('data', (level) => {
     }); // Emit data {date, time, airQualityLevel} to all connected clients
 });
 
-io.on('connection', (socket) => {
-    console.log("A client has connected!"); // Show a log when a new client connects
-    socket.on("disconnect", () => {
-        console.log("Client disconnected");
-    });
+io.on("connection", (socket) => {
+  console.log("A client has connected!"); // Show a log when a new client connects
+  socket.on("disconnect", () => {
+    console.log("Client disconnected");
+  });
 });
 
-// Start the server, listening on port 3001
+// Start the server, listening on port 4001
 server.listen(PORT, () => {
-    console.log(`Server listening on port ${PORT}...`);
+  console.log(`Server listening on port ${PORT}...`);
 });
